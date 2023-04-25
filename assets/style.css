@@ -28,3 +28,10 @@ header {
 nav {
     justify-content: space-between;
 }
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* If there are only 2 arguments. 4px = top/bottom..... 8px = left/right */
+    margin: 4px 8px;
+}
