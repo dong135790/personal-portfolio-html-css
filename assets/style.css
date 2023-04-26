@@ -46,6 +46,7 @@ nav a {
 nav a:hover {
     color: rgb(217, 241, 77);
 }
+
 /* Parent element for work */
 .work {
     display: flex;
@@ -55,6 +56,7 @@ nav a:hover {
 }
 /* Child element for work */
 .work-item {
+    position: relative;
     display: inline-block;
     width: 50%;
 }
@@ -63,10 +65,23 @@ nav a:hover {
 .featured {
     width: 100%;
 }
-
+/* We want the img to fill up 100% of page no matter what, but featured will be 100% and else (work-item) will be 50% */
 .fluid-img  {
     /* fills up the entire line */
-    width: 100%
+    width: 100%;
+    padding: 8px;
+}
+
+.caption {
+    /* Move to upper left hand corner */
+    /* Needs position: relative; in parent element for line 83 & 84 to execute */
+    position: absolute;
+    margin: 16px;
+    padding: 8px;
+    background-color: white;
+    border: 4px dashed black;
+    bottom: 0;
+    left: 0;
 }
 
 
