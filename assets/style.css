@@ -26,7 +26,7 @@ header, section, footer {
 }
 header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 nav {
@@ -42,6 +42,37 @@ nav a {
     margin: 4px 8px 10px 8px;
 }
 
+/* Hover for navbar links */
 nav a:hover {
     color: rgb(217, 241, 77);
 }
+/* Parent element for work */
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Child element for work */
+.work-item {
+    display: inline-block;
+    width: 50%;
+}
+
+/* For the main img on work */
+.featured {
+    width: 100%;
+}
+
+.fluid-img  {
+    /* fills up the entire line */
+    width: 100%
+}
+
+
+@media screen and (max-width: 576px) {
+    .work-item {
+        width: 100%;
+    }
+}
+    
