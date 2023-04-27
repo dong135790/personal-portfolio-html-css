@@ -5,7 +5,7 @@ html, * {
 }
 
 body {
-    background-color: rgb(133, 209, 219);
+    background-color: rgb(17, 119, 80);
 }
 
 main {
@@ -27,15 +27,44 @@ header, section, footer {
 header {
     display: flex;
     justify-content: space-between;
+    min-height: 1vh;
+    max-height: 13vh;
+    max-width: 1200px;
+    background-color: rgb(26, 66, 26);
 }
 
+h1 {
+    background-color: rgba(152,79,221);
+    border: rgb(152, 79, 221) solid;
+    margin: -10px 50px;
+    border-style: inset;
+
+}
+section {
+    display: flex;
+    justify-content: end;
+}
+section p{
+    text-align: start;
+    padding: 10px 30px;
+}
+.backgroundimg {
+    max-height: 300px;
+}
+.sidebar {
+    flex: 1;
+    padding: 10px 10px;
+    border-right: 5px solid black ;
+    width: 125px;
+
+}
 nav {
     display: flex;
     justify-content: flex-end;
     text-decoration: underline;
 }
 
-nav a {
+nav a, ul a {
     text-decoration: none;
     color: white;
     /* (Clockwise direction) If there are only 2 arguments. 4px = top/bottom..... 8px = left/right */
@@ -43,7 +72,7 @@ nav a {
 }
 
 /* Hover for navbar links */
-nav a:hover {
+nav a:hover, ul a:hover {
     color: rgb(217, 241, 77);
 }
 
@@ -52,9 +81,9 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 /* Child element for work */
+/* Parent element for caption. Hence the position:relative; */
 .work-item {
     position: relative;
     display: inline-block;
@@ -69,7 +98,7 @@ nav a:hover {
 .fluid-img  {
     /* fills up the entire line */
     width: 100%;
-    padding: 8px;
+    border: 4px lightblue solid;
 }
 
 .caption {
@@ -83,6 +112,19 @@ nav a:hover {
     bottom: 0;
     left: 0;
 }
+/* List links to contact */
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: underline;
+}
+.imgsize {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0x 0px 0px 9000px;
+}
+/* Change color of links to white */
 
 
 @media screen and (max-width: 576px) {
