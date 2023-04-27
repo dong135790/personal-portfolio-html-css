@@ -11,6 +11,7 @@ NA
 
 ## Visuals
 
+![Alt text](assets/images/Justin-Dong-Personal-Portfolio.png)
 ## Installation
 
 NA 
@@ -35,7 +36,7 @@ NA
 
 ## Resources
 
-[Github Repository]()
-[Deployed Site]()
+[Github Repository](https://github.com/dong135790/personal-portfolio-html-css)
+[Deployed Site](https://dong135790.github.io/personal-portfolio-html-css/)
 
 ## Project Status
