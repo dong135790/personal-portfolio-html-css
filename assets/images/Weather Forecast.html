@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://dong135790.github.io/weather-forecast-dashboard/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./Weather Forecast_files/style.css">
+    <link href="./Weather Forecast_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="./Weather Forecast_files/dayjs.min.js.download" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed="">
+    <main>
+        <div class="container col-12 col-md-3 p-3"></div>
+            <form id="search-form">
+                <label for="search-form" style="
+    padding-left: 170px;
+">Search for a City:</label> <br>
+                <input type="text" id="search-input" name="search" placeholder="Enter City"> <br>
+                    <button class="bg-dark border text-white" type="button" id="searchBtn" autocapitalize="words" onclick="geoApi()">Search</button>
+            </form>
+            <div class="container">
+                <ul id="history" class="vstack gap-3"><button type="button" class="bg-light border" location="Atlanta">Atlanta</button><button type="button" class="bg-light border" location="Corbin">Corbin</button></ul>
+        </div>
+    <h2>Today's Forecast</h2>
+    <article id="today" class="container bg-light border"><div></div><p>5/27/2023</p><p>65.8 Fahrenheit</p><p>53</p><p>6.71 Mph</p></article>
+    <article id="forecast" style="display: flex; justify-content: space-evenly;"><section class="border border-3" id="forecast-1"><p>few clouds</p><p>58.53 Fahrenheit</p><p>2.8 Mph</p><p>light rain</p><p>51.89 Fahrenheit</p><p>6.6 Mph</p></section><section class="border border-3" id="forecast-2"><p>overcast clouds</p><p>59.88 Fahrenheit</p><p>6.73 Mph</p><p>overcast clouds</p><p>53.65 Fahrenheit</p><p>2.66 Mph</p></section><section class="border border-3" id="forecast-3"><p>clear sky</p><p>62.44 Fahrenheit</p><p>6.67 Mph</p><p>clear sky</p><p>57.87 Fahrenheit</p><p>2.62 Mph</p></section><section class="border border-3" id="forecast-4"><p>clear sky</p><p>64.99 Fahrenheit</p><p>9.48 Mph</p><p>overcast clouds</p><p>64.36 Fahrenheit</p><p>3.13 Mph</p></section></article>
+    
+    
+    
+    
+    <section class="border border-3" id="forecast-5"></section>
+
+    <script src="./Weather Forecast_files/script.js.download"></script>    
+    </main>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
